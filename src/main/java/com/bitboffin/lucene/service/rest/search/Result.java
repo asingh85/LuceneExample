@@ -10,7 +10,7 @@ import java.util.List;
  * retrieved 	contains the number of records returned with the object
  * available 	may contain number of total records that may match the query, 
  * 				-1 if not requested (since it is an expensive operation)
- * @author amagge
+ * @author aman
  */
 public class Result {
 	

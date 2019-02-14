@@ -37,7 +37,7 @@ import com.bitboffin.lucene.service.rest.exception.LuceneSearcherException;
 
 /**
  * Responsible for retrieving information from Lucene
- * @author amagge
+ * @author aman
  */
 @Repository("LuceneSearcher")
 public class LuceneSearcher {
@@ -53,7 +53,7 @@ public class LuceneSearcher {
 		try {
 			Path index = Paths.get(indexLocation);
 			indexDirectory = FSDirectory.open(index);
-			CharArraySet stopWordsOverride = new CharArraySet(Collections.emptySet(), true);
+			org.apache.lucene.analysis.CharArraySet stopWordsOverride = new org.apache.lucene.analysis.CharArraySet(Collections.emptySet(), true);
 			Analyzer analyzer = new StandardAnalyzer(stopWordsOverride);
 			queryParser = new QueryParser("dummyfield", analyzer); 
 			logger.info("Connected to Index at: "+indexLocation);
