@@ -1,0 +1,13 @@
+#Default number of records to be requested when not requested explicitly
+lucene.query.default.records=100
+
+#Maximum number of records that can be returned by the API
+lucene.query.max.records=20000
+
+#Path to Lucene index directory
+#lucene.index.location=/home/aman/Desktop/lucene/indexes/testindex
+lucene.index.location=<PATH_TO_LUCENE_INDEX_DIR>
+
+#Port to be used for the rest api
+#server.port=8080
+server.port=<PORT_NUMBER>
